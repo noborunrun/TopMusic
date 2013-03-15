@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F668953A16F339D300E78257 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953916F339D300E78257 /* UIKit.framework */; };
+		F668953C16F339D300E78257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953B16F339D300E78257 /* Foundation.framework */; };
+		F668953E16F339D300E78257 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953D16F339D300E78257 /* CoreGraphics.framework */; };
+		F668954416F339D300E78257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F668954216F339D300E78257 /* InfoPlist.strings */; };
+		F668954616F339D300E78257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F668954516F339D300E78257 /* main.m */; };
+		F668954A16F339D300E78257 /* TMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F668954916F339D300E78257 /* TMAppDelegate.m */; };
+		F668954C16F339D300E78257 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F668954B16F339D300E78257 /* Default.png */; };
+		F668954E16F339D300E78257 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F668954D16F339D300E78257 /* Default@2x.png */; };
+		F668955016F339D300E78257 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F668954F16F339D300E78257 /* Default-568h@2x.png */; };
+		F668955316F339D400E78257 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F668955116F339D300E78257 /* MainStoryboard.storyboard */; };
+		F668955616F339D400E78257 /* TMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F668955516F339D400E78257 /* TMViewController.m */; };
+		F668955E16F339D400E78257 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668955D16F339D400E78257 /* SenTestingKit.framework */; };
+		F668955F16F339D400E78257 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953916F339D300E78257 /* UIKit.framework */; };
+		F668956016F339D400E78257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953B16F339D300E78257 /* Foundation.framework */; };
+		F668956816F339D400E78257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F668956616F339D400E78257 /* InfoPlist.strings */; };
+		F668956B16F339D400E78257 /* TopMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F668956A16F339D400E78257 /* TopMusicTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F668956116F339D400E78257 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F668952E16F339D300E78257 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F668953516F339D300E78257;
+			remoteInfo = TopMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F668953616F339D300E78257 /* TopMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F668953916F339D300E78257 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F668953B16F339D300E78257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F668953D16F339D300E78257 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F668954116F339D300E78257 /* TopMusic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopMusic-Info.plist"; sourceTree = "<group>"; };
+		F668954316F339D300E78257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F668954516F339D300E78257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F668954716F339D300E78257 /* TopMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TopMusic-Prefix.pch"; sourceTree = "<group>"; };
+		F668954816F339D300E78257 /* TMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppDelegate.h; sourceTree = "<group>"; };
+		F668954916F339D300E78257 /* TMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppDelegate.m; sourceTree = "<group>"; };
+		F668954B16F339D300E78257 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F668954D16F339D300E78257 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F668954F16F339D300E78257 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F668955216F339D400E78257 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F668955416F339D400E78257 /* TMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMViewController.h; sourceTree = "<group>"; };
+		F668955516F339D400E78257 /* TMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMViewController.m; sourceTree = "<group>"; };
+		F668955C16F339D400E78257 /* TopMusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopMusicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F668955D16F339D400E78257 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F668956516F339D400E78257 /* TopMusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopMusicTests-Info.plist"; sourceTree = "<group>"; };
+		F668956716F339D400E78257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F668956916F339D400E78257 /* TopMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMusicTests.h; sourceTree = "<group>"; };
+		F668956A16F339D400E78257 /* TopMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMusicTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F668953316F339D300E78257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F668953A16F339D300E78257 /* UIKit.framework in Frameworks */,
+				F668953C16F339D300E78257 /* Foundation.framework in Frameworks */,
+				F668953E16F339D300E78257 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F668955816F339D400E78257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F668955E16F339D400E78257 /* SenTestingKit.framework in Frameworks */,
+				F668955F16F339D400E78257 /* UIKit.framework in Frameworks */,
+				F668956016F339D400E78257 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F668952D16F339D300E78257 = {
+			isa = PBXGroup;
+			children = (
+				F668953F16F339D300E78257 /* TopMusic */,
+				F668956316F339D400E78257 /* TopMusicTests */,
+				F668953816F339D300E78257 /* Frameworks */,
+				F668953716F339D300E78257 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F668953716F339D300E78257 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F668953616F339D300E78257 /* TopMusic.app */,
+				F668955C16F339D400E78257 /* TopMusicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F668953816F339D300E78257 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F668953916F339D300E78257 /* UIKit.framework */,
+				F668953B16F339D300E78257 /* Foundation.framework */,
+				F668953D16F339D300E78257 /* CoreGraphics.framework */,
+				F668955D16F339D400E78257 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F668953F16F339D300E78257 /* TopMusic */ = {
+			isa = PBXGroup;
+			children = (
+				F668954816F339D300E78257 /* TMAppDelegate.h */,
+				F668954916F339D300E78257 /* TMAppDelegate.m */,
+				F668955116F339D300E78257 /* MainStoryboard.storyboard */,
+				F668955416F339D400E78257 /* TMViewController.h */,
+				F668955516F339D400E78257 /* TMViewController.m */,
+				F668954016F339D300E78257 /* Supporting Files */,
+			);
+			path = TopMusic;
+			sourceTree = "<group>";
+		};
+		F668954016F339D300E78257 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F668954116F339D300E78257 /* TopMusic-Info.plist */,
+				F668954216F339D300E78257 /* InfoPlist.strings */,
+				F668954516F339D300E78257 /* main.m */,
+				F668954716F339D300E78257 /* TopMusic-Prefix.pch */,
+				F668954B16F339D300E78257 /* Default.png */,
+				F668954D16F339D300E78257 /* Default@2x.png */,
+				F668954F16F339D300E78257 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F668956316F339D400E78257 /* TopMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				F668956916F339D400E78257 /* TopMusicTests.h */,
+				F668956A16F339D400E78257 /* TopMusicTests.m */,
+				F668956416F339D400E78257 /* Supporting Files */,
+			);
+			path = TopMusicTests;
+			sourceTree = "<group>";
+		};
+		F668956416F339D400E78257 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F668956516F339D400E78257 /* TopMusicTests-Info.plist */,
+				F668956616F339D400E78257 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F668953516F339D300E78257 /* TopMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F668956E16F339D400E78257 /* Build configuration list for PBXNativeTarget "TopMusic" */;
+			buildPhases = (
+				F668953216F339D300E78257 /* Sources */,
+				F668953316F339D300E78257 /* Frameworks */,
+				F668953416F339D300E78257 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopMusic;
+			productName = TopMusic;
+			productReference = F668953616F339D300E78257 /* TopMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F668955B16F339D400E78257 /* TopMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F668957116F339D400E78257 /* Build configuration list for PBXNativeTarget "TopMusicTests" */;
+			buildPhases = (
+				F668955716F339D400E78257 /* Sources */,
+				F668955816F339D400E78257 /* Frameworks */,
+				F668955916F339D400E78257 /* Resources */,
+				F668955A16F339D400E78257 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F668956216F339D400E78257 /* PBXTargetDependency */,
+			);
+			name = TopMusicTests;
+			productName = TopMusicTests;
+			productReference = F668955C16F339D400E78257 /* TopMusicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F668952E16F339D300E78257 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "NineDrafts Inc.";
+			};
+			buildConfigurationList = F668953116F339D300E78257 /* Build configuration list for PBXProject "TopMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F668952D16F339D300E78257;
+			productRefGroup = F668953716F339D300E78257 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F668953516F339D300E78257 /* TopMusic */,
+				F668955B16F339D400E78257 /* TopMusicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F668953416F339D300E78257 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F668954416F339D300E78257 /* InfoPlist.strings in Resources */,
+				F668954C16F339D300E78257 /* Default.png in Resources */,
+				F668954E16F339D300E78257 /* Default@2x.png in Resources */,
+				F668955016F339D300E78257 /* Default-568h@2x.png in Resources */,
+				F668955316F339D400E78257 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F668955916F339D400E78257 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F668956816F339D400E78257 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F668955A16F339D400E78257 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F668953216F339D300E78257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F668954616F339D300E78257 /* main.m in Sources */,
+				F668954A16F339D300E78257 /* TMAppDelegate.m in Sources */,
+				F668955616F339D400E78257 /* TMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F668955716F339D400E78257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F668956B16F339D400E78257 /* TopMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F668956216F339D400E78257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F668953516F339D300E78257 /* TopMusic */;
+			targetProxy = F668956116F339D400E78257 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F668954216F339D300E78257 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F668954316F339D300E78257 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F668955116F339D300E78257 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F668955216F339D400E78257 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F668956616F339D400E78257 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F668956716F339D400E78257 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F668956C16F339D400E78257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F668956D16F339D400E78257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F668956F16F339D400E78257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopMusic/TopMusic-Prefix.pch";
+				INFOPLIST_FILE = "TopMusic/TopMusic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F668957016F339D400E78257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopMusic/TopMusic-Prefix.pch";
+				INFOPLIST_FILE = "TopMusic/TopMusic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F668957216F339D400E78257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopMusic.app/TopMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopMusic/TopMusic-Prefix.pch";
+				INFOPLIST_FILE = "TopMusicTests/TopMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F668957316F339D400E78257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopMusic.app/TopMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopMusic/TopMusic-Prefix.pch";
+				INFOPLIST_FILE = "TopMusicTests/TopMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F668953116F339D300E78257 /* Build configuration list for PBXProject "TopMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F668956C16F339D400E78257 /* Debug */,
+				F668956D16F339D400E78257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F668956E16F339D400E78257 /* Build configuration list for PBXNativeTarget "TopMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F668956F16F339D400E78257 /* Debug */,
+				F668957016F339D400E78257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F668957116F339D400E78257 /* Build configuration list for PBXNativeTarget "TopMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F668957216F339D400E78257 /* Debug */,
+				F668957316F339D400E78257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F668952E16F339D300E78257 /* Project object */;
+}
