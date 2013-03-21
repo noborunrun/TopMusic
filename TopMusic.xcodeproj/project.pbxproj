@@ -7,22 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61C722416F7A4460099CCBC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61C722316F7A4460099CCBC /* MainStoryboard.storyboard */; };
+		F61C722516F7A4460099CCBC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61C722316F7A4460099CCBC /* MainStoryboard.storyboard */; };
+		F61C723116F7A4770099CCBC /* TSMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722916F7A4770099CCBC /* TSMainCollectionViewController.m */; };
+		F61C723216F7A4770099CCBC /* TSMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722916F7A4770099CCBC /* TSMainCollectionViewController.m */; };
+		F61C723316F7A4770099CCBC /* TSMainCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61C722A16F7A4770099CCBC /* TSMainCollectionViewController.xib */; };
+		F61C723416F7A4770099CCBC /* TSMainCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61C722A16F7A4770099CCBC /* TSMainCollectionViewController.xib */; };
+		F61C723516F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */; };
+		F61C723616F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */; };
+		F61C723716F7A4770099CCBC /* TSLineDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722E16F7A4770099CCBC /* TSLineDrawView.m */; };
+		F61C723816F7A4770099CCBC /* TSLineDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722E16F7A4770099CCBC /* TSLineDrawView.m */; };
+		F61C723E16F7A4880099CCBC /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C723A16F7A4880099CCBC /* TSViewController.m */; };
+		F61C723F16F7A4880099CCBC /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C723A16F7A4880099CCBC /* TSViewController.m */; };
+		F61C724016F7A4880099CCBC /* TSMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C723C16F7A4880099CCBC /* TSMainTableViewCell.m */; };
+		F61C724116F7A4880099CCBC /* TSMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C723C16F7A4880099CCBC /* TSMainTableViewCell.m */; };
+		F61C724216F7A4880099CCBC /* TSMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61C723D16F7A4880099CCBC /* TSMainTableViewCell.xib */; };
+		F61C724316F7A4880099CCBC /* TSMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61C723D16F7A4880099CCBC /* TSMainTableViewCell.xib */; };
+		F61C724616F7A49E0099CCBC /* TSServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C724516F7A49E0099CCBC /* TSServerController.m */; };
+		F61C724716F7A49E0099CCBC /* TSServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C724516F7A49E0099CCBC /* TSServerController.m */; };
 		F668953A16F339D300E78257 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953916F339D300E78257 /* UIKit.framework */; };
 		F668953C16F339D300E78257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953B16F339D300E78257 /* Foundation.framework */; };
 		F668953E16F339D300E78257 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953D16F339D300E78257 /* CoreGraphics.framework */; };
 		F668954416F339D300E78257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F668954216F339D300E78257 /* InfoPlist.strings */; };
 		F668954616F339D300E78257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F668954516F339D300E78257 /* main.m */; };
-		F668954A16F339D300E78257 /* TMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F668954916F339D300E78257 /* TMAppDelegate.m */; };
+		F668954A16F339D300E78257 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F668954916F339D300E78257 /* TSAppDelegate.m */; };
 		F668954C16F339D300E78257 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F668954B16F339D300E78257 /* Default.png */; };
 		F668954E16F339D300E78257 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F668954D16F339D300E78257 /* Default@2x.png */; };
 		F668955016F339D300E78257 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F668954F16F339D300E78257 /* Default-568h@2x.png */; };
-		F668955316F339D400E78257 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F668955116F339D300E78257 /* MainStoryboard.storyboard */; };
-		F668955616F339D400E78257 /* TMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F668955516F339D400E78257 /* TMViewController.m */; };
 		F668955E16F339D400E78257 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668955D16F339D400E78257 /* SenTestingKit.framework */; };
 		F668955F16F339D400E78257 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953916F339D300E78257 /* UIKit.framework */; };
 		F668956016F339D400E78257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953B16F339D300E78257 /* Foundation.framework */; };
 		F668956816F339D400E78257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F668956616F339D400E78257 /* InfoPlist.strings */; };
 		F668956B16F339D400E78257 /* TopMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F668956A16F339D400E78257 /* TopMusicTests.m */; };
+		F6DF1DF416FB7CD000B20050 /* iTunesScrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */; };
+		F6DF1DF516FB7CD000B20050 /* iTunesScrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */; };
+		F6DF1DF716FB7D1600B20050 /* storeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DF1DF616FB7D1600B20050 /* storeList.plist */; };
+		F6DF1DF816FB7D1600B20050 /* storeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DF1DF616FB7D1600B20050 /* storeList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +56,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F61C722316F7A4460099CCBC /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F61C722816F7A4770099CCBC /* TSMainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainCollectionViewController.h; sourceTree = "<group>"; };
+		F61C722916F7A4770099CCBC /* TSMainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMainCollectionViewController.m; sourceTree = "<group>"; };
+		F61C722A16F7A4770099CCBC /* TSMainCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMainCollectionViewController.xib; sourceTree = "<group>"; };
+		F61C722B16F7A4770099CCBC /* TSMainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainCollectionViewCell.h; sourceTree = "<group>"; };
+		F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMainCollectionViewCell.m; sourceTree = "<group>"; };
+		F61C722D16F7A4770099CCBC /* TSLineDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLineDrawView.h; sourceTree = "<group>"; };
+		F61C722E16F7A4770099CCBC /* TSLineDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLineDrawView.m; sourceTree = "<group>"; };
+		F61C723916F7A4880099CCBC /* TSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSViewController.h; sourceTree = "<group>"; };
+		F61C723A16F7A4880099CCBC /* TSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSViewController.m; sourceTree = "<group>"; };
+		F61C723B16F7A4880099CCBC /* TSMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainTableViewCell.h; sourceTree = "<group>"; };
+		F61C723C16F7A4880099CCBC /* TSMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMainTableViewCell.m; sourceTree = "<group>"; };
+		F61C723D16F7A4880099CCBC /* TSMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMainTableViewCell.xib; sourceTree = "<group>"; };
+		F61C724416F7A49E0099CCBC /* TSServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSServerController.h; sourceTree = "<group>"; };
+		F61C724516F7A49E0099CCBC /* TSServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSServerController.m; sourceTree = "<group>"; };
 		F668953616F339D300E78257 /* TopMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F668953916F339D300E78257 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F668953B16F339D300E78257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,20 +79,20 @@
 		F668954316F339D300E78257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F668954516F339D300E78257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F668954716F339D300E78257 /* TopMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TopMusic-Prefix.pch"; sourceTree = "<group>"; };
-		F668954816F339D300E78257 /* TMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppDelegate.h; sourceTree = "<group>"; };
-		F668954916F339D300E78257 /* TMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppDelegate.m; sourceTree = "<group>"; };
+		F668954816F339D300E78257 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
+		F668954916F339D300E78257 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
 		F668954B16F339D300E78257 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F668954D16F339D300E78257 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F668954F16F339D300E78257 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F668955216F339D400E78257 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F668955416F339D400E78257 /* TMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMViewController.h; sourceTree = "<group>"; };
-		F668955516F339D400E78257 /* TMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMViewController.m; sourceTree = "<group>"; };
 		F668955C16F339D400E78257 /* TopMusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopMusicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F668955D16F339D400E78257 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F668956516F339D400E78257 /* TopMusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopMusicTests-Info.plist"; sourceTree = "<group>"; };
 		F668956716F339D400E78257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F668956916F339D400E78257 /* TopMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMusicTests.h; sourceTree = "<group>"; };
 		F668956A16F339D400E78257 /* TopMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMusicTests.m; sourceTree = "<group>"; };
+		F6DF1DF216FB7CD000B20050 /* iTunesScrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesScrapper.h; sourceTree = "<group>"; };
+		F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesScrapper.m; sourceTree = "<group>"; };
+		F6DF1DF616FB7D1600B20050 /* storeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = storeList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +152,27 @@
 		F668953F16F339D300E78257 /* TopMusic */ = {
 			isa = PBXGroup;
 			children = (
-				F668954816F339D300E78257 /* TMAppDelegate.h */,
-				F668954916F339D300E78257 /* TMAppDelegate.m */,
-				F668955116F339D300E78257 /* MainStoryboard.storyboard */,
-				F668955416F339D400E78257 /* TMViewController.h */,
-				F668955516F339D400E78257 /* TMViewController.m */,
+				F61C724416F7A49E0099CCBC /* TSServerController.h */,
+				F61C724516F7A49E0099CCBC /* TSServerController.m */,
+				F61C722816F7A4770099CCBC /* TSMainCollectionViewController.h */,
+				F61C722916F7A4770099CCBC /* TSMainCollectionViewController.m */,
+				F61C722A16F7A4770099CCBC /* TSMainCollectionViewController.xib */,
+				F61C722B16F7A4770099CCBC /* TSMainCollectionViewCell.h */,
+				F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */,
+				F61C722D16F7A4770099CCBC /* TSLineDrawView.h */,
+				F61C722E16F7A4770099CCBC /* TSLineDrawView.m */,
+				F668954816F339D300E78257 /* TSAppDelegate.h */,
+				F668954916F339D300E78257 /* TSAppDelegate.m */,
+				F61C723916F7A4880099CCBC /* TSViewController.h */,
+				F61C723A16F7A4880099CCBC /* TSViewController.m */,
+				F61C723B16F7A4880099CCBC /* TSMainTableViewCell.h */,
+				F61C723C16F7A4880099CCBC /* TSMainTableViewCell.m */,
+				F61C723D16F7A4880099CCBC /* TSMainTableViewCell.xib */,
+				F61C722316F7A4460099CCBC /* MainStoryboard.storyboard */,
+				F6DF1DF216FB7CD000B20050 /* iTunesScrapper.h */,
+				F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */,
 				F668954016F339D300E78257 /* Supporting Files */,
+				F6DF1DF616FB7D1600B20050 /* storeList.plist */,
 			);
 			path = TopMusic;
 			sourceTree = "<group>";
@@ -236,7 +286,10 @@
 				F668954C16F339D300E78257 /* Default.png in Resources */,
 				F668954E16F339D300E78257 /* Default@2x.png in Resources */,
 				F668955016F339D300E78257 /* Default-568h@2x.png in Resources */,
-				F668955316F339D400E78257 /* MainStoryboard.storyboard in Resources */,
+				F61C722416F7A4460099CCBC /* MainStoryboard.storyboard in Resources */,
+				F61C723316F7A4770099CCBC /* TSMainCollectionViewController.xib in Resources */,
+				F61C724216F7A4880099CCBC /* TSMainTableViewCell.xib in Resources */,
+				F6DF1DF716FB7D1600B20050 /* storeList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F668956816F339D400E78257 /* InfoPlist.strings in Resources */,
+				F61C722516F7A4460099CCBC /* MainStoryboard.storyboard in Resources */,
+				F61C723416F7A4770099CCBC /* TSMainCollectionViewController.xib in Resources */,
+				F61C724316F7A4880099CCBC /* TSMainTableViewCell.xib in Resources */,
+				F6DF1DF816FB7D1600B20050 /* storeList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F668954616F339D300E78257 /* main.m in Sources */,
-				F668954A16F339D300E78257 /* TMAppDelegate.m in Sources */,
-				F668955616F339D400E78257 /* TMViewController.m in Sources */,
+				F668954A16F339D300E78257 /* TSAppDelegate.m in Sources */,
+				F61C723116F7A4770099CCBC /* TSMainCollectionViewController.m in Sources */,
+				F61C723516F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */,
+				F61C723716F7A4770099CCBC /* TSLineDrawView.m in Sources */,
+				F61C723E16F7A4880099CCBC /* TSViewController.m in Sources */,
+				F61C724016F7A4880099CCBC /* TSMainTableViewCell.m in Sources */,
+				F61C724616F7A49E0099CCBC /* TSServerController.m in Sources */,
+				F6DF1DF416FB7CD000B20050 /* iTunesScrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +345,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F668956B16F339D400E78257 /* TopMusicTests.m in Sources */,
+				F61C723216F7A4770099CCBC /* TSMainCollectionViewController.m in Sources */,
+				F61C723616F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */,
+				F61C723816F7A4770099CCBC /* TSLineDrawView.m in Sources */,
+				F61C723F16F7A4880099CCBC /* TSViewController.m in Sources */,
+				F61C724116F7A4880099CCBC /* TSMainTableViewCell.m in Sources */,
+				F61C724716F7A49E0099CCBC /* TSServerController.m in Sources */,
+				F6DF1DF516FB7CD000B20050 /* iTunesScrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +372,6 @@
 				F668954316F339D300E78257 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F668955116F339D300E78257 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F668955216F339D400E78257 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		F668956616F339D400E78257 /* InfoPlist.strings */ = {
@@ -456,6 +518,7 @@
 				F668957016F339D400E78257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F668957116F339D400E78257 /* Build configuration list for PBXNativeTarget "TopMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +527,7 @@
 				F668957316F339D400E78257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

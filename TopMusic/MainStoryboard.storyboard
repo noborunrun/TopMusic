@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="GHh-yy-ZHt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="GBViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-870" y="2040"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9ps-yw-I0x">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="GHh-yy-ZHt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xdc-Rt-qIL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Te-kP-gq5" kind="relationship" relationship="rootViewController" id="dBg-dp-sc6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B11-ke-isW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-860" y="625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mgf-Ji-RKL">
+            <objects>
+                <tableViewController id="1Te-kP-gq5" customClass="TSViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="jau-3j-B1f">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.93725496529999996" alpha="1" colorSpace="deviceRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="1Te-kP-gq5" id="KgW-9b-ZkE"/>
+                            <outlet property="delegate" destination="1Te-kP-gq5" id="D7B-sP-7XX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="JWI-2g-ocR">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="UM0-DI-UBf">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="mgc-7x-EQd">
+                                <rect key="frame" x="591" y="7" width="170" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="500"/>
+                                    <segment title="1000"/>
+                                    <segment title="2000"/>
+                                    <segment title="5000"/>
+                                    <segment title="10000"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectScale:" destination="1Te-kP-gq5" eventType="valueChanged" id="QGl-I2-FsF"/>
+                                </connections>
+                            </segmentedControl>
+                            <connections>
+                                <action selector="changeScale:" destination="1Te-kP-gq5" id="5C2-II-wuN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scaleSegment" destination="mgc-7x-EQd" id="B00-iZ-84Z"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tI-jf-Xdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="625"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

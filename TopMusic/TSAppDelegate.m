@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 NineDrafts Inc. All rights reserved.
 //
 
-#import "TMAppDelegate.h"
+#import "TSAppDelegate.h"
 
-@implementation TMAppDelegate
+@implementation TSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

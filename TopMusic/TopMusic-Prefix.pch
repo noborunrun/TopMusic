@@ -12,3 +12,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#import "TSAppDelegate.h"
+
+#define kSERVERURL @"http://itunes.apple.com/%@/rss/topsongs/limit=25/json"
