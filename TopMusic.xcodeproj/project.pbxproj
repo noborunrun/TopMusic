@@ -67,6 +67,7 @@
 		F61C723D16F7A4880099CCBC /* TSMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMainTableViewCell.xib; sourceTree = "<group>"; };
 		F61C724416F7A49E0099CCBC /* TSServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSServerController.h; sourceTree = "<group>"; };
 		F61C724516F7A49E0099CCBC /* TSServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSServerController.m; sourceTree = "<group>"; };
+		F65EBECB16FCF0F200447750 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		F668953616F339D300E78257 /* TopMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F668953916F339D300E78257 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F668953B16F339D300E78257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +119,7 @@
 		F668952D16F339D300E78257 = {
 			isa = PBXGroup;
 			children = (
+				F65EBECB16FCF0F200447750 /* README */,
 				F668953F16F339D300E78257 /* TopMusic */,
 				F668956316F339D400E78257 /* TopMusicTests */,
 				F668953816F339D300E78257 /* Frameworks */,
