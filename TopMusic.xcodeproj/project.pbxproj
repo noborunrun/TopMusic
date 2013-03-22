@@ -15,8 +15,6 @@
 		F61C723416F7A4770099CCBC /* TSMainCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61C722A16F7A4770099CCBC /* TSMainCollectionViewController.xib */; };
 		F61C723516F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */; };
 		F61C723616F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */; };
-		F61C723716F7A4770099CCBC /* TSLineDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722E16F7A4770099CCBC /* TSLineDrawView.m */; };
-		F61C723816F7A4770099CCBC /* TSLineDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C722E16F7A4770099CCBC /* TSLineDrawView.m */; };
 		F61C723E16F7A4880099CCBC /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C723A16F7A4880099CCBC /* TSViewController.m */; };
 		F61C723F16F7A4880099CCBC /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C723A16F7A4880099CCBC /* TSViewController.m */; };
 		F61C724016F7A4880099CCBC /* TSMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C723C16F7A4880099CCBC /* TSMainTableViewCell.m */; };
@@ -39,8 +37,8 @@
 		F668956016F339D400E78257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F668953B16F339D300E78257 /* Foundation.framework */; };
 		F668956816F339D400E78257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F668956616F339D400E78257 /* InfoPlist.strings */; };
 		F668956B16F339D400E78257 /* TopMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F668956A16F339D400E78257 /* TopMusicTests.m */; };
-		F6DF1DF416FB7CD000B20050 /* iTunesScrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */; };
-		F6DF1DF516FB7CD000B20050 /* iTunesScrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */; };
+		F6693D1C16FC454E00CD3852 /* iTunesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6693D1B16FC454E00CD3852 /* iTunesItem.m */; };
+		F6693D1D16FC454E00CD3852 /* iTunesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6693D1B16FC454E00CD3852 /* iTunesItem.m */; };
 		F6DF1DF716FB7D1600B20050 /* storeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DF1DF616FB7D1600B20050 /* storeList.plist */; };
 		F6DF1DF816FB7D1600B20050 /* storeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DF1DF616FB7D1600B20050 /* storeList.plist */; };
 /* End PBXBuildFile section */
@@ -62,8 +60,6 @@
 		F61C722A16F7A4770099CCBC /* TSMainCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMainCollectionViewController.xib; sourceTree = "<group>"; };
 		F61C722B16F7A4770099CCBC /* TSMainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainCollectionViewCell.h; sourceTree = "<group>"; };
 		F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMainCollectionViewCell.m; sourceTree = "<group>"; };
-		F61C722D16F7A4770099CCBC /* TSLineDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLineDrawView.h; sourceTree = "<group>"; };
-		F61C722E16F7A4770099CCBC /* TSLineDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLineDrawView.m; sourceTree = "<group>"; };
 		F61C723916F7A4880099CCBC /* TSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSViewController.h; sourceTree = "<group>"; };
 		F61C723A16F7A4880099CCBC /* TSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSViewController.m; sourceTree = "<group>"; };
 		F61C723B16F7A4880099CCBC /* TSMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainTableViewCell.h; sourceTree = "<group>"; };
@@ -90,8 +86,8 @@
 		F668956716F339D400E78257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F668956916F339D400E78257 /* TopMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMusicTests.h; sourceTree = "<group>"; };
 		F668956A16F339D400E78257 /* TopMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMusicTests.m; sourceTree = "<group>"; };
-		F6DF1DF216FB7CD000B20050 /* iTunesScrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesScrapper.h; sourceTree = "<group>"; };
-		F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesScrapper.m; sourceTree = "<group>"; };
+		F6693D1A16FC454E00CD3852 /* iTunesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesItem.h; sourceTree = "<group>"; };
+		F6693D1B16FC454E00CD3852 /* iTunesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesItem.m; sourceTree = "<group>"; };
 		F6DF1DF616FB7D1600B20050 /* storeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = storeList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,8 +155,6 @@
 				F61C722A16F7A4770099CCBC /* TSMainCollectionViewController.xib */,
 				F61C722B16F7A4770099CCBC /* TSMainCollectionViewCell.h */,
 				F61C722C16F7A4770099CCBC /* TSMainCollectionViewCell.m */,
-				F61C722D16F7A4770099CCBC /* TSLineDrawView.h */,
-				F61C722E16F7A4770099CCBC /* TSLineDrawView.m */,
 				F668954816F339D300E78257 /* TSAppDelegate.h */,
 				F668954916F339D300E78257 /* TSAppDelegate.m */,
 				F61C723916F7A4880099CCBC /* TSViewController.h */,
@@ -169,10 +163,10 @@
 				F61C723C16F7A4880099CCBC /* TSMainTableViewCell.m */,
 				F61C723D16F7A4880099CCBC /* TSMainTableViewCell.xib */,
 				F61C722316F7A4460099CCBC /* MainStoryboard.storyboard */,
-				F6DF1DF216FB7CD000B20050 /* iTunesScrapper.h */,
-				F6DF1DF316FB7CD000B20050 /* iTunesScrapper.m */,
-				F668954016F339D300E78257 /* Supporting Files */,
+				F6693D1A16FC454E00CD3852 /* iTunesItem.h */,
+				F6693D1B16FC454E00CD3852 /* iTunesItem.m */,
 				F6DF1DF616FB7D1600B20050 /* storeList.plist */,
+				F668954016F339D300E78257 /* Supporting Files */,
 			);
 			path = TopMusic;
 			sourceTree = "<group>";
@@ -332,11 +326,10 @@
 				F668954A16F339D300E78257 /* TSAppDelegate.m in Sources */,
 				F61C723116F7A4770099CCBC /* TSMainCollectionViewController.m in Sources */,
 				F61C723516F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */,
-				F61C723716F7A4770099CCBC /* TSLineDrawView.m in Sources */,
 				F61C723E16F7A4880099CCBC /* TSViewController.m in Sources */,
 				F61C724016F7A4880099CCBC /* TSMainTableViewCell.m in Sources */,
 				F61C724616F7A49E0099CCBC /* TSServerController.m in Sources */,
-				F6DF1DF416FB7CD000B20050 /* iTunesScrapper.m in Sources */,
+				F6693D1C16FC454E00CD3852 /* iTunesItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,11 +340,10 @@
 				F668956B16F339D400E78257 /* TopMusicTests.m in Sources */,
 				F61C723216F7A4770099CCBC /* TSMainCollectionViewController.m in Sources */,
 				F61C723616F7A4770099CCBC /* TSMainCollectionViewCell.m in Sources */,
-				F61C723816F7A4770099CCBC /* TSLineDrawView.m in Sources */,
 				F61C723F16F7A4880099CCBC /* TSViewController.m in Sources */,
 				F61C724116F7A4880099CCBC /* TSMainTableViewCell.m in Sources */,
 				F61C724716F7A49E0099CCBC /* TSServerController.m in Sources */,
-				F6DF1DF516FB7CD000B20050 /* iTunesScrapper.m in Sources */,
+				F6693D1D16FC454E00CD3852 /* iTunesItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

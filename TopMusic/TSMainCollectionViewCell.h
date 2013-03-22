@@ -10,4 +10,6 @@
 #import "TSMainCollectionViewController.h"
 
 @interface TSMainCollectionViewCell : UICollectionViewCell
+@property (nonatomic, strong) UIImageView *jacketImage;
+@property (nonatomic, strong) UILabel *titleLabel;
 @end

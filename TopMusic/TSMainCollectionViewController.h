@@ -9,12 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TSMainCollectionViewController : UICollectionViewController
+@property (nonatomic, strong) NSArray *storeData;
 
-@property (nonatomic, strong) NSArray *protArray;
-@property (nonatomic, strong) NSString *track;
-@property (nonatomic) NSInteger scale;
-@property (nonatomic) NSInteger titleIndex;
-@property (nonatomic) NSInteger titleCount;
-@property (nonatomic) NSInteger allIndexCount;
-//@property (nonatomic) NSInteger index;
 @end

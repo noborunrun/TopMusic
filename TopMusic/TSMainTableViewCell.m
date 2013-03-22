@@ -20,19 +20,10 @@
     return self;
 }
 
-//-(void)setScrollViewSetting
-//{
-//    self.scrollView_.delegate = scrollViewDelegate;
-////    self.scrollView_.contentSize = CGSizeMake(self.frame.size.width+200, self.frame.size.height);
-//    self.scrollView_.protData = [self.protData objectAtIndex:0];
-//    [self addSubview:self.scrollView_];
-//    
-//}
-
 -(void)setCollectionView
 {
-    self.collectionViewCon = [[TSMainCollectionViewController alloc] initWithNibName:@"GBMainCollectionViewController" bundle:nil];
-    self.collectionViewCon.track = self.track;
+    self.collectionViewCon = [[TSMainCollectionViewController alloc] initWithNibName:@"TSMainCollectionViewController" bundle:nil];
+    self.collectionViewCon.storeData = [NSArray arrayWithArray:self.dataArray];
     self.collectionViewCon.view.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     [self addSubview:self.collectionViewCon.view];
     

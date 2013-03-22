@@ -12,6 +12,6 @@
 +(TSServerController *) sharedManager;
 
 //Get
--(NSArray *)getServerDataWithTracks:(NSString *)tracks Scale:(NSInteger)scale TileIndex:(NSInteger)tindex TileCount:(NSInteger)n Format:(NSString *)format;
+-(NSArray *)getSongRankingWithCountry:(NSString *)countryCode Count:(NSInteger)count;
 
 @end

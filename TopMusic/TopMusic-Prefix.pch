@@ -14,5 +14,6 @@
 #endif
 
 #import "TSAppDelegate.h"
-
-#define kSERVERURL @"http://itunes.apple.com/%@/rss/topsongs/limit=25/json"
+#import "iTunesItem.h"
+#import "TSServerController.h"
+#define kSERVERURL @"http://itunes.apple.com"

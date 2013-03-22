@@ -8,7 +8,8 @@
 
 #import "TSMainCollectionViewController.h"
 #import "TSMainCollectionViewCell.h"
-#import "TSLineDrawView.h"
+#import "TSServerController.h"
+#import "iTunesItem.h"
 
 @interface TSMainCollectionViewController ()
 
@@ -32,11 +33,7 @@
     [self.collectionView registerClass:[TSMainCollectionViewCell class] forCellWithReuseIdentifier:@"MAIN_CELL"];
     [self.view setBackgroundColor:[UIColor clearColor]];
     
-    //    TODO: 全長をサーバから取得
-//    self.allIndexCount = 249240621;
-//    self.scale = [[(TSAppDelegate *)[[UIApplication sharedApplication] delegate] rootViewController] scale];
-
-    self.collectionView.contentSize = CGSizeMake(self.allIndexCount/self.scale, self.view.frame.size.height);
+    self.collectionView.contentSize = CGSizeMake([self.storeData count] * 50, self.view.frame.size.height);
     [super viewDidLoad];
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self selector:@selector(receiveScrollNotification:) name:@"SCROLL_NOTIFICATION" object:nil];
@@ -51,28 +48,35 @@
 #pragma mark - UICollectionViewDelegate
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section;
 {
-    return self.allIndexCount/self.scale;
+    return [self.storeData count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
     TSMainCollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"MAIN_CELL" forIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor clearColor]];
+    cell.titleLabel = [[UILabel alloc] init];
+    cell.jacketImage = [[UIImageView alloc] init];
+
+    [cell setBackgroundColor:[UIColor blueColor]];
+    cell.titleLabel.backgroundColor = [UIColor whiteColor];
+    cell.jacketImage.backgroundColor = [UIColor redColor];
     
-    TSLineDrawView *aView = [[TSLineDrawView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
-    [aView setBackgroundColor:[UIColor clearColor]];
-    aView.indexPath = indexPath;
+    cell.titleLabel.frame = CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height);
+    cell.jacketImage.frame = CGRectMake(0, 0, 175, 175);
+    
+    cell.titleLabel.text = [[self.storeData objectAtIndex:indexPath.row] name];
+    [cell addSubview:cell.titleLabel];
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
     dispatch_async(queue, ^{
-//        データ取得
-//        NSArray *aArray = [NSArray arrayWithArray:[[TSServerController sharedManager] getServerDataWithTracks:self.track Scale:self.scale TileIndex:indexPath.row TileCount:1 Format:@"json"]];
-//        aView.protData = [NSArray arrayWithArray:[[[aArray objectAtIndex:0] objectForKey:@"val"] objectAtIndex:0]];
+        NSURL *url = [[self.storeData objectAtIndex:indexPath.row] imageURL];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *aImage = [UIImage imageWithData:data];
 
         dispatch_sync(dispatch_get_main_queue(), ^{
-            [cell addSubview:aView];
-            [aView setNeedsDisplay];
-//            NSLog(@"index:%d::frame:%f,%f",indexPath.row,aView.frame.size.width,aView.frame.size.height);
+            cell.jacketImage.image = aImage;
+            [cell addSubview:cell.jacketImage];
+            [cell layoutIfNeeded];
         });
     });
     
@@ -83,28 +87,13 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
     //enshore that the end of scroll is fired.
-    //    [self performSelector:@selector(scrollViewDidEndScrollingAnimation:) withObject:nil afterDelay:0.3];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SCROLL_NOTIFICATION" object:scrollView];
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-	// フリック操作によるスクロール終了
-    //	[self endScroll];
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-	if(!decelerate) {
-		// ドラッグ終了 かつ 加速無し
-        //		[self endScroll];
-	}
 }
 
 - (void)receiveScrollNotification:(NSNotification *)notification {
     
     UIScrollView *stockTableView = notification.object;
-//    NSLog(@"%f",stockTableView.contentOffset.x);
-//    [[(TSAppDelegate *)[[UIApplication sharedApplication] delegate] rootViewController] slideAllCollecetionViewOffset:stockTableView.contentOffset];
-//    self.tableView.contentOffset = stockTableView.contentOffset;
+    [[(TSAppDelegate *)[[UIApplication sharedApplication] delegate] rootViewController] slideAllCollecetionViewOffset:stockTableView.contentOffset];
 }
 
 @end

@@ -20,24 +20,29 @@ static TSServerController *_sharedInstance = nil;
     return _sharedInstance;
 }
 
-//-(NSArray *)getServerDataWithTracks:(NSString *)tracks Scale:(NSInteger)scale TileIndex:(NSInteger)tindex TileCount:(NSInteger)n Format:(NSString *)format
-//{
-//    NSError *error;
-//    NSString *paramString = [NSString stringWithFormat:@"tracks=%@&scale=%d&tindex=%d&n=%d&format=%@",tracks,scale,tindex,n,format];
-//    
-//    NSString *escapedString = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(
-//                                                                                 kCFAllocatorDefault,
-//                                                                                 (__bridge CFStringRef)paramString,
-//                                                                                 NULL,
-//                                                                                 (__bridge CFStringRef)@"!*'();:@+$,/?%#[]",
-//                                                                                 kCFStringEncodingUTF8);
-//    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"%@?%@",kSERVERURL,escapedString]];
-////    NSLog(@"%@",url);
-//    NSArray *aArray = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:NSJSONReadingAllowFragments error:&error];
-////    NSDictionary *dict = [NSJSONSerialization JSONObjectWithStream:[NSInputStream inputStreamWithURL:url] options:NSJSONReadingAllowFragments error:&error];
-////    NSLog(@"%@",dict);
-//    return aArray;
-//}
-
-
+-(NSArray *)getSongRankingWithCountry:(NSString *)countryCode Count:(NSInteger)count
+{
+    NSString *paramString = [NSString stringWithFormat:@"/%@/rss/topsongs/limit=%d/json",countryCode,count];
+    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"%@%@",kSERVERURL,paramString]];
+    NSMutableArray *result = [NSMutableArray array];
+    NSError *jsonError = nil;
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:url] options:0 error:&jsonError];
+    NSDictionary *feed = [json objectForKey:@"feed"];
+    NSArray *entries = [feed objectForKey:@"entry"];
+    for (NSDictionary *entry in entries) {
+        iTunesItem *item = [[iTunesItem alloc] init];
+        NSDictionary *imName = [entry objectForKey:@"im:name"];
+        item.name = [imName objectForKey:@"label"];
+        NSArray *imImages = [entry objectForKey:@"im:image"];
+        NSDictionary *imImage = [imImages lastObject];
+        NSString *url = [imImage objectForKey:@"label"];
+        item.imageURL = [NSURL URLWithString:url];
+        NSDictionary *idField = [entry objectForKey:@"id"];
+        NSDictionary *attributes = [idField objectForKey:@"attributes"];
+        item.trackId = [attributes objectForKey:@"im:id"];
+        [result addObject:item];
+    }
+    
+    return result;
+}
 @end

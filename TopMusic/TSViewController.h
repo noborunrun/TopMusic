@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TSViewController : UITableViewController
-@property (strong, nonatomic) IBOutlet UISegmentedControl *scaleSegment;
-- (NSInteger)scale;
 
-- (IBAction)selectScale:(id)sender;
 -(void)slideAllCollecetionViewOffset:(CGPoint)offset;
 
 @end
